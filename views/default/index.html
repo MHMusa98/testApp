@@ -1,0 +1,50 @@
+<!-- In views/default/index.html -->
+{{extend 'layout.html'}}
+
+<h2>Class V Students</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Birth Year</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{for record in classv_records:}}
+        <tr>
+            <td>{{=record.ID}}</td>
+            <td>{{=record.Name}}</td>
+            <td>{{=record.BirthYear}}</td>
+            <td>{{=record.FathersName}}</td>
+            <td>{{=record.MothersName}}</td>
+        </tr>
+        {{pass}}
+    </tbody>
+</table>
+
+<h2>Class VI Students</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Birth Year</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{for record in classvi_records:}}
+        <tr>
+            <td>{{=record.ID}}</td>
+            <td>{{=record.Name}}</td>
+            <td>{{=record.BirthYear}}</td>
+            <td>{{=record.FathersName}}</td>
+            <td>{{=record.MothersName}}</td>
+        </tr>
+        {{pass}}
+    </tbody>
+</table>
